@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE blogic-io PUBLIC "-//NTTDATA//DTD TERASOLUNA for Spring blogic-io 1.0//JA"
+                           "../dtd/blogic-io.dtd">
+
+<!-- ビジネスロジック入出力定義 -->
+<!-- サンプルなのでコメントアウト -->
+<blogic-io>
+
+	<action path="/logon/helloWorldBL">
+		<blogic-params bean-name="jp.terasoluna.thin.tutorial.web.helloworld.dto.HelloWorldInput">
+		</blogic-params>
+		
+		<blogic-result>
+			<set-property property="helloWorld" blogic-property="helloWorld" dest="form" />
+		</blogic-result>
+	</action>
+</blogic-io>

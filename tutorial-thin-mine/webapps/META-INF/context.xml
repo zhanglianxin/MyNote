@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource
+     name="jdbc/TerasolunaSampleDataSource"
+     type="javax.sql.DataSource"
+     driverClassName="oracle.jdbc.OracleDriver"
+     username="user01"
+     password="user01"
+     url="jdbc:oracle:thin:@172.17.1.4:1522:CCC"
+     maxIdle="2"
+     maxWait="5000"
+     maxActive="4"/>
+</Context>

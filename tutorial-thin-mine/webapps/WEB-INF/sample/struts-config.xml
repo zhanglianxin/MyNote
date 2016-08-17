@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+<!-- ======================================== フォームビーン定義 -->
+  <form-beans>
+
+
+  </form-beans>
+
+<!-- ======================================== アクションマッピング定義 -->
+  <action-mappings type="jp.terasoluna.fw.web.struts.action.ActionMappingEx">
+
+  </action-mappings>
+</struts-config>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE blogic-io PUBLIC "-//NTTDATA//DTD TERASOLUNA for Spring blogic-io 1.0//JA"
+                           "../dtd/blogic-io.dtd">
+
+<!-- ビジネスロジック入出力定義 -->
+<!-- サンプルなのでコメントアウト
+<blogic-io>
+
+	<action path="/logon/logonBL">
+		<blogic-params bean-name="jp.terasoluna.thin.tutorial.web.logon.dto.LogonInput">
+			<set-property property="userId" blogic-property="userId" source="form" />
+		</blogic-params>
+		<blogic-result>
+			<set-property property="USER_VALUE_OBJECT" blogic-property="uvo" dest="session" />
+		</blogic-result>
+	</action>
+	<action path="/logon/sampleLogonBL">
+		<blogic-params bean-name="jp.terasoluna.thin.tutorial.web.logon.dto.SampleLogonInput">
+			<set-property property="userId" blogic-property="userId" source="form" />
+			<set-property property="password" blogic-property="password" source="form" />
+		</blogic-params>
+		<blogic-result>
+			<set-property property="USER_VALUE_OBJECT" blogic-property="uvo" dest="session" />
+		</blogic-result>
+	</action>
+</blogic-io>
+-->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap 
+            PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+            "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!-- SqlMap定義 -->
+<sqlMap namespace="helloworld">
+	<select id="helloWorld"
+		parameterClass="jp.terasoluna.thin.tutorial.web.helloworld.dto.HelloWorldInput"
+		resultClass="jp.terasoluna.thin.tutorial.web.helloworld.dto.HelloWorldOutput">
+		SELECT 'helloworld' AS HELLOWORLD FROM DUAL
+	</select>
+</sqlMap>

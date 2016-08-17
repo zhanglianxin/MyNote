@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+<!-- ======================================== フォームビーン定義 -->
+  <form-beans>
+
+    <!-- ログオン用アクションフォーム -->
+    <form-bean name="_logonForm" type="jp.terasoluna.thin.tutorial.web.logon.form.LogonForm" />
+    <!-- 北川試験用ログオン用アクションフォーム -->
+    <form-bean name="_sampleLogonForm" type="jp.terasoluna.thin.tutorial.web.logon.form.SampleLogonForm" />
+
+  </form-beans>
+
+<!-- ======================================== アクションマッピング定義 -->
+  <action-mappings type="jp.terasoluna.fw.web.struts.action.ActionMappingEx">
+
+    <!-- ログオン画面表示用アクション -->
+    <action path="/logon/logonSCR"
+            name="_logonForm" scope="session"
+            parameter="/logon/logon.jsp" />
+
+    <!-- ログオン処理用アクション -->
+    <action path="/logon/logonBL"
+            name="_logonForm" scope="session"
+            validate="true" input="/logon/logoff.do">
+        <forward name="success" path="/logon/menuSCR.do" />
+    </action>
+
+    <!-- 20110614 北川大樹 試験追加用 ログオン処理アクション-->
+    <action path="/logon/sampleLogonBL"
+            name="_sampleLogonForm" scope="session"
+            validate="false" input="/logon/logoff.do">
+        <forward name="success" path="/logon/sampleMenuSCR.do" />
+    </action>
+    <action path="/logon/sampleMenuSCR"
+            name="_sampleLogonForm" scope="session"
+            parameter="/logon/sampleMenu.jsp" />
+
+    <!-- ログオフ処理用アクション -->
+    <action path="/logon/logoff"
+            name="_logonForm" scope="session"
+            parameter="/logon/logon.jsp" />
+
+    <!-- メニュー画面表示用アクション -->
+    <action path="/logon/menuSCR"
+            name="_logonForm" scope="session"
+            parameter="/logon/menu.jsp" />
+
+	<!-- メニュー画面分岐用アクション -->
+    <action path="/logon/menuDSP"
+			name="_logonForm" scope="session">
+	        <forward name="insert" path="/userManager/insertSCR.do" />
+            <forward name="list" path="/userManager/listBL.do" />
+            <!-- 20110615 北川大樹 追加-->
+            <forward name="showAddBkUser" path="/userManager/showAddBkUser.do"/>
+    </action>
+
+  </action-mappings>
+</struts-config>

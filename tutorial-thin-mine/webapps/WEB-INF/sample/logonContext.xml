@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ログオン業務のBean定義 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+    <!-- アクション定義 -->
+
+    <!-- ログオン画面表示用アクション定義 -->
+    <bean name="/logon/logonSCR" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
+
+	<!-- ログオン処理用アクション定義 -->
+    <bean name="/logon/logonBL" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.BLogicAction" >
+          <property name="businessLogic" ref="LogonBLogic" />
+    </bean>
+
+    <!-- 20110614 kitagawa ログオン処理用アクション定義 -->
+    <bean name="/logon/sampleLogonBL" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.BLogicAction" >
+          <property name="businessLogic" ref="SampleLogonBLogic" />
+    </bean>
+    <bean name="/logon/sampleMenuSCR" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
+
+
+    <!-- ログオフ処理用アクション定義 -->
+    <bean name="/logon/logoff" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.LogoffAction" />
+
+	<!-- メニュー画面表示用アクション定義 -->
+    <bean name="/logon/menuSCR" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
+
+	<!-- メニュー画面分岐用アクション定義 -->
+    <bean name="/logon/menuDSP" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.DispatchAction" />
+
+	<!-- ログオン処理ビジネスロジック定義 -->
+	<bean id="LogonBLogic" scope="singleton"
+	      class="jp.terasoluna.thin.tutorial.web.logon.blogic.LogonBLogic" />
+
+	<!-- ログオン処理ビジネスロジック定義 -->
+	<bean id="SampleLogonBLogic" scope="singleton"
+	      class="jp.terasoluna.thin.tutorial.web.logon.blogic.SampleLogonBLogic" />
+
+
+</beans>

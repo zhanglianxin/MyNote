@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ログオン業務のBean定義 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+    <!-- 画面表示用アクション定義 -->
+    <bean name="/logon/logonSCR" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
+
+    <bean name="/logon/helloWorldBL" scope="singleton"
+          class="jp.terasoluna.fw.web.struts.actions.BLogicAction" >
+          <property name="businessLogic" ref="HelloWorldBLogic" />
+    </bean>
+
+
+	<!-- 业务逻辑定义 -->
+	<bean id="HelloWorldBLogic" scope="prototype"
+	      class="jp.terasoluna.thin.tutorial.web.helloworld.blogic.HelloWorldBLogic">
+		<property name="queryDAO" ref="queryDAO"></property>
+	</bean>
+
+</beans>
