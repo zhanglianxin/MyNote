@@ -1,4 +1,4 @@
-﻿# Hello Terasoluna
+# Hello Terasoluna
 
 工程结构：
 ```
@@ -90,11 +90,19 @@ Java Resources
 ```xml
 <struts-config>
 	<form-beans>
-		<form-bean name="_helloWorldForm" type="jp.terasoluna.thin.tutorial.web.helloworld.form.HelloWorldForm" />
+		<form-bean name="_helloWorldForm" 
+                   type="jp.terasoluna.thin.tutorial.web.helloworld.form.HelloWorldForm" />
 	</form-beans>
 	<action-mappings type="jp.terasoluna.fw.web.struts.action.ActionMappingEx" >
-		<action path="/logon/logonSCR" name="_helloWorldForm" scope="session" parameter="/logon/helloWorldBL.do" />
-		<action path="/logon/helloWorldBL" name="_helloWorldForm" scope="session" validate="false" input="/logon/logoff.do">
+		<action path="/logon/logonSCR" 
+                name="_helloWorldForm" 
+                scope="session" 
+                parameter="/logon/helloWorldBL.do" />
+		<action path="/logon/helloWorldBL" 
+                name="_helloWorldForm" 
+                scope="session" 
+                validate="false" 
+                input="/logon/logoff.do">
 			<forward name="success" path="/helloworld/helloworld.jsp" />
 		</action>
 	</action-mappings>
@@ -104,11 +112,14 @@ Java Resources
 `helloworldContext.xml`
 ```xml
 <beans>
-	<bean name="/logon/logonSCR" scope="singleton" class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
-	<bean name="/logon/helloWorldBL" scope="singleton" class="jp.terasoluna.fw.web.struts.actions.BLogicAction">
+	<bean name="/logon/logonSCR" scope="singleton" 
+          class="jp.terasoluna.fw.web.struts.actions.ForwardAction" />
+	<bean name="/logon/helloWorldBL" scope="singleton" 
+          class="jp.terasoluna.fw.web.struts.actions.BLogicAction">
 		<property name="businessLogic" ref="HelloWorldBLogic" />
 	</bean>
-	<bean id="HelloWorldBLogic" scope="prototype" class="jp.terasoluna.thin.tutorial.web.helloworld.blogic.HelloWroldBLogic">
+	<bean id="HelloWorldBLogic" scope="prototype" 
+          class="jp.terasoluna.thin.tutorial.web.helloworld.blogic.HelloWroldBLogic">
 		<property name="queryDAO" ref="queryDAO" />
 </beans>
 ```
