@@ -130,7 +130,8 @@ php artisan queue:table
 // --timeout    指定任务运行超时秒数 (默认为: 60)
 // --sleep      等待检查队列任务的秒数 (默认为: 3)
 // --tries      任务记录失败重试次数 (默认为: 0)
-php artisan queue:listen [--queue[="..."]] [--delay[="..."]] [--memory[="..."]] [--timeout[="..."]] [--sleep[="..."]] [--tries[="..."]] [connection]
+php artisan queue:listen [--queue[="..."]] [--delay[="..."]] [--memory[="..."]] [--timeout[="..."]] 
+                         [--sleep[="..."]] [--tries[="..."]] [connection]
 // 查看所有执行失败的队列任务
 php artisan queue:failed
 // 为执行失败的数据表任务创建一个迁移
@@ -156,7 +157,8 @@ php artisan queue:subscribe [--type[="..."]] queue url
 // --memory     内存限制大小，单位为 MB (默认为: 128)
 // --sleep      当没有任务处于有效状态时, 设置其进入休眠的秒数 (默认为: 3)
 // --tries      任务记录失败重试次数 (默认为: 0)
-php artisan queue:work [--queue[="..."]] [--daemon] [--delay[="..."]] [--force] [--memory[="..."]] [--sleep[="..."]] [--tries[="..."]] [connection]
+php artisan queue:work [--queue[="..."]] [--daemon] [--delay[="..."]] [--force] [--memory[="..."]] 
+                       [--sleep[="..."]] [--tries[="..."]] [connection]
 
 // 生成路由缓存文件来提升路由效率
 php artisan route:cache
