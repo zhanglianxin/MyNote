@@ -23,20 +23,35 @@ The `slice`, `chunk`, and `reverse` methods now preserve keys on the collect
 The following features are deprecated in 5.2 and will be removed in the 5.3 release in June 2016:
 
 - `Illuminate\Contracts\Bus\SelfHandling` contract. Can be removed from jobs.
+
   `Illuminate\Contracts\Bus\SelfHandling` 契约
+
 - The `lists` method on the Collection, query builder and Eloquent query builder objects has been renamed to `pluck`. The method signature remains the same.
+
   集合的 `lists` 方法被重命名为 `pluck` 方法。
+
 - Implicit controller routes using `Route::controller` have been deprecated. Please use explicit route registration in your routes file. This will likely be extracted into a package.
+
   隐式控制器路由 `Route::controller` 被废弃。在路由文件中请使用明确的路由注册。
+
 - The `get`, `post`, and other route helper functions have been removed. You may use the `Route` facade instead.
+
 - The `database` session driver from 5.1 has been renamed to `legacy-database` and will be removed. Consult notes on the "database session driver" above for more information.
+
   Laravel 5.1 的 `database` Session驱动被重命名为 `legacy-database`。
+
 - The `Str::randomBytes` function has been deprecated in favor of the `random_bytes` native PHP function.
+
   `Str::randomBytes` 方法被废弃，直接使用 PHP 的 `random_bytes` 即可。
+
 - The `Str::equals` function has been deprecated in favor of the `hash_equals` native PHP function.
+
   `Str::equals` 方法被废弃，直接使用 PHP 的 `hash_equals` 方法即可。
+
 - `Illuminate\View\Expression` has been deprecated in favor of `Illuminate\Support\HtmlString`.
+
   `Illuminate\View\Expression` 被废弃，使用 `Illuminate\Support\HtmlString` 即可。
+
 - The `WincacheStore` cache driver has been removed.
 
 
@@ -131,33 +146,44 @@ $collection->lists('id')->all();
 The following Laravel features have been deprecated and will be removed entirely with the release of Laravel 5.2 in December 2015:
 
 - Route filters have been deprecated in preference of [middleware](https://laravel.com/docs/5.2/middleware).
-  The `array_fetch` helper has been deprecated in favor of the `array_pluck` method.[中间件](http://laravelacademy.org/post/57.html)中的路由过滤器
+  The `array_fetch` helper has been deprecated in favor of the `array_pluck` method.
+
+  [中间件](http://laravelacademy.org/post/57.html)中的路由过滤器
 
 - The `Illuminate\Contracts\Routing\Middleware` contract has been deprecated. No contract is required on your middleware. In addition, the `TerminableMiddleware` contract has also been deprecated. Instead of implementing the interface, simply define a `terminate` method on your middleware.
+
   `Illuminate\Contracts\Routing\Middleware`，中间件中不再需要任何contract，`Illuminate\Contracts\Routing\TerminableMiddleware`被废弃，在中间件中定义一个terminate方法替代实现该接口。
 
 - The `Illuminate\Contracts\Queue\ShouldBeQueued` contract has been deprecated in favor of `Illuminate\Contracts\Queue\ShouldQueue`.
+
   `Illuminate\Contracts\Queue\ShouldBeQueued` 被废弃，使用 `Illuminate\Contracts\Queue\ShouldQueue`
 
 - Iron.io "push queues" have been deprecated in favor of typical Iron.io queues and [queue listeners](https://laravel.com/docs/5.2/queues#running-the-queue-listener).
+
   Iron.io “推入队列” 被废弃， 使用Iron.io 队列和队列监听器.
 
 - The `Illuminate\Foundation\Bus\DispatchesCommands` trait has been deprecated and renamed to `Illuminate\Foundation\Bus\DispatchesJobs`.
+
   `Illuminate\Foundation\Bus\DispatchesCommands` trait 被废弃并被重命名为`Illuminate\Foundation\Bus\DispatchesJobs`.
 
 - `Illuminate\Container\BindingResolutionException` has been moved to `Illuminate\Contracts\Container\BindingResolutionException`.
+
   `Illuminate\Container\BindingResolutionException` 被移动到`Illuminate\Contracts\Container\BindingResolutionException`.
 
 - The service container's `bindShared` method has been deprecated in favor of the `singleton` method.
+
   服务容器的 `bindShared` 方法被废弃，使用`singleton` 方法。
 
 - The Eloquent and query builder `pluck` method has been deprecated and renamed to `value`.
+
   Eloquent和query builder的 `pluck` 方法被废弃并重命名为`value`.
 
 - The collection `fetch` method has been deprecated in favor of the `pluck` method.
+
   Collection的 `fetch` 方法被废弃，使用 `pluck` 方法.
 
 - The `array_fetch` helper has been deprecated in favor of the `array_pluck` method.
+
   `array_fetch` 帮助函数被废弃， 使用`array_pluck`
 
 
