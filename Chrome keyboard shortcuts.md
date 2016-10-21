@@ -2,7 +2,7 @@
 
 ## Windows 和 Linux
 
-[标签页和窗口快捷键](javascript:;)
+### [标签页和窗口快捷键](javascript:;)
 
 | **操作**                | **快捷键**                                  |
 | --------------------- | ---------------------------------------- |
@@ -23,7 +23,7 @@
 | 最大化当前窗口               | **Alt + 空格键 + x**                        |
 | 退出 Google Chrome      | **Ctrl + Shift + q** 或 **Alt + F4**      |
 
-[Google Chrome 功能快捷键](javascript:;)
+### [Google Chrome 功能快捷键](javascript:;)
 
 | **操作**                                   | **快捷键**                           |
 | ---------------------------------------- | --------------------------------- |
@@ -45,7 +45,7 @@
 | 使用其他帐户登录或进入隐身模式                          | **Ctrl + Shift + m**              |
 | 打开反馈表单                                   | **Ctrl + Shift + i**              |
 
-[地址栏快捷键](javascript:;)
+### [地址栏快捷键](javascript:;)
 
 在地址栏中可使用以下快捷键：
 
@@ -58,7 +58,7 @@
 | 跳转到地址栏                                | **Ctrl + l**、**Alt + d** 或 **F6** |
 | 从页面中的任意位置搜索                           | **Ctrl + k** 或 **Ctrl + e**       |
 
-[网页快捷键](javascript:;)
+### [网页快捷键](javascript:;)
 
 | **操作**                  | **快捷键**                               |
 | ----------------------- | ------------------------------------- |
@@ -90,7 +90,7 @@
 | 在通知中拒绝                  | **Alt + Shift + d**                   |
 | 在当前标签页中打开主页             | **Alt + Home**                        |
 
-[鼠标快捷键](javascript:;)
+### [鼠标快捷键](javascript:;)
 
 以下快捷键要求您使用鼠标：
 
@@ -106,7 +106,7 @@
 | 将标签页移回其原始位置         | 拖动标签页的同时按 **Esc**                        |
 | 将当前网页保存为书签          | 将相应网址拖动到书签栏中                             |
 | 下载链接目标              | 按住 **Alt** 键的同时点击链接                      |
-| 显示浏览记录              | 右键点击“后退”箭头 ![返回](https://lh3.googleusercontent.com/Awj_kPSQkRRN4OxV7YN9Y0rWmgpF2MnuA7VA-Jc_UEXIgtJzzXTcSyWv9hTvHuxbHfs=w18-h18) 或“前进”箭头 ![下一个](https://storage.cloud.google.com/support-kms-prod/b8Z32THVR6iozEUGS14uPQBxrJbRi357Cnpm)，或者点击并按住“后退”箭头 ![返回](https://lh3.googleusercontent.com/Awj_kPSQkRRN4OxV7YN9Y0rWmgpF2MnuA7VA-Jc_UEXIgtJzzXTcSyWv9hTvHuxbHfs=w18-h18) 或“前进”箭头 ![下一个](https://storage.cloud.google.com/support-kms-prod/b8Z32THVR6iozEUGS14uPQBxrJbRi357Cnpm) |
+| 显示浏览记录              | 右键点击“后退”箭头 或“前进”箭头 ，或者点击并按住“后退”箭头 或“前进”箭头 |
 | 最大化或最小化窗口           | 双击标签栏的空白区域                               |
 | 放大网页上的所有内容          | 按住 **Ctrl** 键的同时向上滚动鼠标滚轮                 |
 | 缩小网页上的所有内容          | 按住 **Ctrl** 键的同时向下滚动鼠标滚轮                 |
