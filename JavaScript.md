@@ -216,10 +216,10 @@ var func = function(arg1, ..., argN) {
   var str = "2 + 3";
   alert(str); // 2 + 3
   alert(eval(str)); // 5
-
+  // ...
   var str1 = "alert('hello')";
   eval(str1); // hello
-  ```
+  ```
 
 `encodeURI()`：把字符串作为 URI 进行编码
 
