@@ -85,7 +85,7 @@ Git把每次提交的文件的全部内容（snapshot）都会记录下来
 使用Git的第一件事就是设置名字和email，这些就是在提交commit时的签名。
 
     git config --global user.name "zhanglianxin"
-    git config --global user.email "zhanglianxin1993@163.com"
+    git config --global user.email "your_email@example.com"
 
 ## 获得一个Git仓库
 ### Clone一个仓库
